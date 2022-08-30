@@ -1,0 +1,17 @@
+/* mobile and tablet */
+@media (max-width: 63.9375em) {
+    .content__list{
+        flex-direction: column;
+    }
+}
+/* mobile */
+@media (max-width: 46.1875em) {
+
+}
+/* tablet */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+
+}
+@media (min-width: 64em) {
+
+}

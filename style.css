@@ -1,0 +1,148 @@
+*{
+     box-sizing: inherit; 
+     
+}
+p{
+    margin: 0;
+}
+body{
+    transform: none !important;
+    transition: none !important;
+    margin: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+}
+
+#home{
+    display:grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 150px auto;
+   
+}
+
+.sidebar{
+   grid-column: 1/2;
+   grid-row: 1/3;
+}
+.sidebar__wrapper{
+    list-style-type: none;
+    padding-left: 0;
+    background-color: #191718;
+    margin: 0;
+    height: 100%;
+}
+.sidebar__item{
+    height: 44px;
+    font-size: 16px;
+    line-height: 19px;
+    /* border-bottom: px;
+    border-color: rgb(63, 62, 62);
+    border-style: solid; */
+    border-bottom: rgb(61, 56, 56) solid 1px;
+    color: #AAAAAA;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+}
+.sidebar__item span{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}
+.sidebar__item.active{
+    color: #fff;
+}
+.sidebar__item:hover{
+    cursor: pointer;
+    background-color: #5C5C5C;
+}
+.content{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 80px;
+ }
+.content__logo{
+    width: 310px;
+    height: 122px;
+}
+.content__logo img{
+    width: 100%;
+    height: 100%;
+}
+.content--active{
+    margin: 14px 0;
+    background: #EFEFEF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content--active h2{
+    color: #000000;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+}
+/* .content__wrapper{
+    width: 100%;
+    margin: auto;
+} */
+.content--active p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    /* width: 64%; */
+}
+.content__list{
+    display: flex;
+    flex-shrink: 1;
+    gap: 15px;
+}
+.item{
+    /* width: 470px; */
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.item__title{
+
+}
+.item p{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+}
+.item__detail{
+    display: flex;
+    width: 100%;
+}
+
+.item__detail p{
+    width: 326px;
+    
+    
+}
+
+.item__detail img{
+    width: 100%;
+    height: 100%;
+}
+.footer{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #3E3E3E;
+    border-top: rgb(118, 107, 107) solid 1px;
+    padding: 5px 80px;
+    margin-top: 67px;
+}
